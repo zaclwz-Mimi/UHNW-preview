@@ -10,10 +10,9 @@
   <meta name="robots" content="index, follow" />
   <meta name="theme-color" content="#F7F3EC" />
   <link rel="canonical" href="https://zaclwz-mimi.github.io/UHNW-preview/" />
-
-
-  <!-- Open Graph -->
+<!-- Open Graph -->
 <meta property="og:image" content="https://zaclwz-mimi.github.io/UHNW-preview/assets/poster.png" />
+
   <meta property="og:title" content="UHNW Client Mastery — A 2-Hour Executive Preview" />
   <meta property="og:description" content="Serve the way the world's greatest houses do. A two-hour executive preview in UHNW client mastery. Kuala Lumpur · July–August 2026 · By invitation only." />
   <!-- Open Graph image: the campaign poster -->
@@ -194,18 +193,17 @@
     .hero {
       position: relative;
       display: grid;
-      grid-template-columns: 1.15fr 0.85fr;
-      align-items: stretch;
-      min-height: min(88vh, 820px);
-      padding: 0;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: clamp(2rem, 5vw, 4.5rem);
+      max-width: var(--maxw);
+      margin-inline: auto;
+      padding: clamp(2.5rem, 6vw, 5rem) var(--gutter);
     }
     .hero__content {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      padding: clamp(2.5rem, 6vw, 5rem) var(--gutter);
-      max-width: calc(var(--maxw) * 0.62);
-      margin-left: max(0px, calc((100vw - var(--maxw)) / 2));
     }
     .hero h1 {
       font-size: clamp(2.6rem, 6.5vw, 5rem);
@@ -220,6 +218,8 @@
     }
     .hero__visual {
       position: relative;
+      align-self: stretch;
+      min-height: clamp(440px, 64vh, 660px);
       background: var(--ink);
       overflow: hidden;
     }
@@ -229,7 +229,7 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
-      object-position: center;
+      object-position: 62% center;
     }
     /* thin gold accent line between content and visual */
     .hero__visual::before {
